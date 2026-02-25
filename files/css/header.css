@@ -148,3 +148,17 @@ header a {
 .dropdown:hover .dropdown-content {
     display: block;
 }
+
+/* Section header inside the dropdown menu */
+.dropdown-content .dropdown-header {
+    background-color: #f1f1f1; /* Light grey to distinguish from links */
+    color: #a51417;            /* WUSTL Red for the title */
+    padding: 10px 16px;        /* Matches the padding of links */
+    font-size: 12px;           /* Slightly smaller to indicate hierarchy */
+    font-weight: bold;
+    text-transform: uppercase; /* Distinguishes it visually as a category */
+    letter-spacing: 0.5px;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 5px;
+    cursor: default;           /* Tells the user it is not a link */
+}
