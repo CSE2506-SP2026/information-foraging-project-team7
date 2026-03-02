@@ -24,3 +24,41 @@ main li {
 .classroom p {
     font-size: 1.15em;
 }
+/* Add this to files/css/classrooms.css */
+.schedule-comparison {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  margin: 20px 0;
+  width: 100%;
+}
+
+.schedule-column {
+  flex: 1; /* This makes both columns take up equal width */
+  background: #fdfdfd;
+  border: 1px solid #eee;
+  padding: 10px;
+}
+
+.schedule-column h3 {
+  text-align: center;
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+}
+
+.schedule-column table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.schedule-column td {
+  padding: 5px;
+  font-size: 0.9rem;
+}
+
+/* Responsive: Stacks them on top of each other on small mobile screens */
+@media (max-width: 600px) {
+  .schedule-comparison {
+    flex-direction: column;
+  }
+}

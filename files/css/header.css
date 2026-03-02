@@ -149,16 +149,17 @@ header a {
     display: block;
 }
 
-/* Section header inside the dropdown menu */
+/* Standardized Header inside the dropdown menu */
 .dropdown-content .dropdown-header {
-    background-color: #f1f1f1; /* Light grey to distinguish from links */
-    color: #a51417;            /* WUSTL Red for the title */
-    padding: 10px 16px;        /* Matches the padding of links */
-    font-size: 12px;           /* Slightly smaller to indicate hierarchy */
+    background-color: #f1f1f1; 
+    color: #a51417;            
+    padding: 12px 16px;        /* Standardized padding for consistent height */
+    font-size: 14px;           /* Increased slightly for better readability */
     font-weight: bold;
-    text-transform: uppercase; /* Distinguishes it visually as a category */
+    text-transform: uppercase; 
     letter-spacing: 0.5px;
     border-bottom: 1px solid #ddd;
     margin-bottom: 5px;
-    cursor: default;           /* Tells the user it is not a link */
+    display: block;            /* Ensures it takes up the full width */
+    cursor: default;           
 }
